@@ -30,7 +30,7 @@ from . import events, get_string, mediainfo, udB, ultroid_bot, ultroid_cmd
 from ._inline import something
 
 
-@ultroid_cmd(pattern="cptfilter( (.*)|$)")
+@ultroid_cmd(pattern="addfilter( (.*)|$)")
 async def af(e):
     wrd = (e.pattern_match.group(1).strip()).lower()
     wt = await e.get_reply_message()
