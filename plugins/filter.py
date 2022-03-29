@@ -89,8 +89,8 @@ async def lsnote(e):
 
 
 async def filter_func(e):
-    if isinstance(e.sender, User) and e.sender.bot:
-        return
+    #if isinstance(e.sender, User) and e.sender.bot:
+        #return
     xx = (e.text).lower()
     chat = e.chat_id
     x = get_filter(chat)
